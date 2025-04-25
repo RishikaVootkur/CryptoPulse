@@ -1,0 +1,112 @@
+import { Crypto } from "@/store/cryptoSlice";
+
+export const initialCryptoData: Crypto[] = [
+  {
+    id: "bitcoin",
+    name: "Bitcoin",
+    symbol: "BTC",
+    logoSymbol: "₿",
+    price: 93759.48,
+    percentChange1h: 0.43,
+    percentChange24h: 0.93,
+    percentChange7d: 11.11,
+    marketCap: 1861618902186,
+    volume24h: 43874950947,
+    volume24hNative: 467810,
+    circulatingSupply: 19850000,
+    maxSupply: 21000000,
+    chartPath: "M0,35 L5,32 L10,33 L15,34 L20,30 L25,31 L30,29 L35,25 L40,26 L45,24 L50,20 L55,18 L60,16 L65,14 L70,15 L75,13 L80,10 L85,8 L90,7 L95,5 L100,4 L105,2 L110,3 L115,1 L120,0",
+    isFavorite: false
+  },
+  {
+    id: "ethereum",
+    name: "Ethereum",
+    symbol: "ETH",
+    logoSymbol: "Ξ",
+    price: 1802.46,
+    percentChange1h: 0.60,
+    percentChange24h: 3.21,
+    percentChange7d: 13.68,
+    marketCap: 217581279327,
+    volume24h: 23547469307,
+    volume24hNative: 13094000,
+    circulatingSupply: 120710000,
+    maxSupply: null,
+    chartPath: "M0,30 L5,32 L10,28 L15,30 L20,25 L25,28 L30,24 L35,25 L40,20 L45,22 L50,18 L55,16 L60,15 L65,12 L70,10 L75,8 L80,10 L85,6 L90,7 L95,4 L100,5 L105,2 L110,1 L115,2 L120,0",
+    isFavorite: false
+  },
+  {
+    id: "tether",
+    name: "Tether",
+    symbol: "USDT",
+    logoSymbol: "₮",
+    price: 1.00,
+    percentChange1h: 0.00,
+    percentChange24h: 0.00,
+    percentChange7d: 0.04,
+    marketCap: 145320022085,
+    volume24h: 92288882007,
+    volume24hNative: 92250000000,
+    circulatingSupply: 145270000000,
+    maxSupply: null,
+    chartPath: "M0,20 L5,20 L10,20.1 L15,19.9 L20,20 L25,20.1 L30,19.9 L35,20 L40,19.8 L45,20.2 L50,20 L55,19.9 L60,20.1 L65,20 L70,19.8 L75,20 L80,19.9 L85,20.1 L90,20 L95,19.8 L100,20.2 L105,20 L110,19.9 L115,20 L120,20.1",
+    isFavorite: false
+  },
+  {
+    id: "xrp",
+    name: "XRP",
+    symbol: "XRP",
+    logoSymbol: "X",
+    price: 2.22,
+    percentChange1h: 0.46,
+    percentChange24h: 0.54,
+    percentChange7d: 6.18,
+    marketCap: 130073814966,
+    volume24h: 5131481491,
+    volume24hNative: 2308000000,
+    circulatingSupply: 58390000000,
+    maxSupply: 100000000000,
+    chartPath: "M0,25 L5,27 L10,24 L15,22 L20,25 L25,20 L30,18 L35,22 L40,19 L45,17 L50,19 L55,15 L60,14 L65,16 L70,13 L75,10 L80,12 L85,9 L90,8 L95,6 L100,8 L105,5 L110,4 L115,3 L120,2",
+    isFavorite: false
+  },
+  {
+    id: "bnb",
+    name: "BNB",
+    symbol: "BNB",
+    logoSymbol: "B",
+    price: 606.65,
+    percentChange1h: 0.09,
+    percentChange24h: -1.20,
+    percentChange7d: 3.73,
+    marketCap: 85471956947,
+    volume24h: 1874281784,
+    volume24hNative: 3080000,
+    circulatingSupply: 140890000,
+    maxSupply: 200000000,
+    chartPath: "M0,15 L5,17 L10,14 L15,16 L20,18 L25,15 L30,17 L35,16 L40,18 L45,19 L50,16 L55,14 L60,12 L65,15 L70,13 L75,11 L80,13 L85,9 L90,10 L95,8 L100,6 L105,7 L110,5 L115,3 L120,4",
+    isFavorite: false
+  },
+  {
+    id: "solana",
+    name: "Solana",
+    symbol: "SOL",
+    logoSymbol: "S",
+    price: 151.51,
+    percentChange1h: 0.53,
+    percentChange24h: 1.26,
+    percentChange7d: 14.74,
+    marketCap: 78381958631,
+    volume24h: 4881674486,
+    volume24hNative: 32250000,
+    circulatingSupply: 517310000,
+    maxSupply: null,
+    chartPath: "M0,20 L5,22 L10,19 L15,21 L20,18 L25,16 L30,19 L35,17 L40,15 L45,14 L50,16 L55,13 L60,11 L65,14 L70,10 L75,12 L80,9 L85,8 L90,7 L95,5 L100,6 L105,4 L110,2 L115,3 L120,1",
+    isFavorite: false
+  }
+];
+
+export const chartPaths = {
+  up: "M0,35 L5,32 L10,33 L15,34 L20,30 L25,31 L30,29 L35,25 L40,26 L45,24 L50,20 L55,18 L60,16 L65,14 L70,15 L75,13 L80,10 L85,8 L90,7 L95,5 L100,4 L105,2 L110,3 L115,1 L120,0",
+  down: "M0,0 L5,3 L10,2 L15,1 L20,5 L25,4 L30,6 L35,10 L40,9 L45,11 L50,15 L55,17 L60,19 L65,21 L70,20 L75,22 L80,25 L85,27 L90,28 L95,30 L100,31 L105,33 L110,32 L115,34 L120,35",
+  stable: "M0,20 L5,20 L10,20.1 L15,19.9 L20,20 L25,20.1 L30,19.9 L35,20 L40,19.8 L45,20.2 L50,20 L55,19.9 L60,20.1 L65,20 L70,19.8 L75,20 L80,19.9 L85,20.1 L90,20 L95,19.8 L100,20.2 L105,20 L110,19.9 L115,20 L120,20.1"
+};
